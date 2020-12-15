@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aws_images",
+  "info": {
+    "name": "aws-image"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "url": {
+      "type": "richtext",
+      "required": true
+    },
+    "parent_id": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/aws-images",
+      "handler": "aws-image.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/aws-images/count",
+      "handler": "aws-image.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/aws-images/:id",
+      "handler": "aws-image.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/aws-images",
+      "handler": "aws-image.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/aws-images/:id",
+      "handler": "aws-image.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/aws-images/:id",
+      "handler": "aws-image.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "patron_attrs",
+  "info": {
+    "name": "patron-attrs"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "full_name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
